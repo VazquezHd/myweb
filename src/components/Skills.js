@@ -37,7 +37,7 @@ export const Skills = () => {
                             Skills
                         </h2>
                         <p>
-                            dfghrgshfghdfhgfhgf hgf h  hfghfgdhfg fg g hfgf fgh
+                            Cuento con multiples certificaciones expedidas por Oracle (Alura Latam) y Google (Inroads).
                         </p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
