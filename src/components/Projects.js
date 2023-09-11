@@ -55,14 +55,12 @@ export const Projects = () => {
                       <Nav.Link eventKey="first">React</Nav.Link> 
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">HTML y CSS</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Javascript</Nav.Link>
+                      <Nav.Link eventKey="second">Javascript, HTML y CSS </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">Diseño Gráfico</Nav.Link>
                     </Nav.Item>
+                   
                   </Nav>
                   <Tab.Content>
                     <Tab.Pane eventKey="first">
