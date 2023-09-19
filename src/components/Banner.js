@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -46,10 +48,15 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} mid={6} xl={7}>
-                    <span className="tagline">Bienvenidos a mi Portafolio</span>
-                    <h1>{`Hola, mi nombre es Iván Vázquez :`}<span className="wrap"> {text}</span></h1>
-                    <p>Soy desarrollador, tengo experiencia en desarrollo web y diseño de interfaz. Me considero una persona comprometida con aprender y mejorar.</p>
-                    <button onClick={() =>console.log('connect')}>Contáctame <ArrowRightCircle size={25}/></button>
+                        <TrackVisibility>
+                        {({isVisible}) =>
+                            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                                <span className="tagline">Bienvenidos a mi Portafolio</span>
+                                <h1>{`Hola, mi nombre es Iván Vázquez :`}<span className="wrap"> {text}</span></h1>
+                                <p>Soy desarrollador, tengo experiencia en desarrollo web y diseño de interfaz. Me considero una persona comprometida con aprender y mejorar.</p>
+                                <button onClick={() =>console.log('connect')}>Contáctame <ArrowRightCircle size={25}/></button>
+                            </div>}
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} mid={6} xl={5}>
                         <img src={headerImg} alt="Headder Img" />
