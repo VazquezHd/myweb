@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
+import contactImg from "../assets/img/contact.png";
 
 export const Contact = () => {
     const formInitialDetails = {
@@ -23,7 +23,7 @@ export const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setButtonText("Sending...");
+        setButtonText("Enviando...");
         let response = await fetch("http://localhost:5000/contact", {
           method: "POST",
           headers: {
@@ -35,9 +35,9 @@ export const Contact = () => {
         let result = await response.json();
         setFormDetails(formInitialDetails);
         if (result.code == 200) {
-          setStatus({ succes: true, message: 'Message sent successfully'});
+          setStatus({ succes: true, message: 'El mensaje se envio satisfactoriamente.'});
         } else {
-          setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+          setStatus({ succes: false, message: 'Algo salió mal, intenta más tarde.'});
         }
       }; 
 
