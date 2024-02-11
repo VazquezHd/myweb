@@ -554,6 +554,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 80px;
   margin-top: -122px;
 }
+
+.button-separator {
+  margin-right: 10px; /* Ajusta el valor según la separación que desees */
+  display: inline-block; /* Para asegurar que la separación se aplique correctamente */
+}
 .newsletter-bx h3 {
   font-weight: 700;
   letter-spacing: 0.5px;

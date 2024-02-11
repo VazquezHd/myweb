@@ -8,7 +8,7 @@ import TrackVisibility from 'react-on-screen';
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Desarrollador Web","Diseñador UX/UI","Diseñador Gráfico"];
+    const toRotate = ["Desarrollador web", "Diseñador web y UX/UI", " Diseñador gráfico"];
     const[text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -52,8 +52,8 @@ export const Banner = () => {
                         {({isVisible}) =>
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                 <span className="tagline">Bienvenidos a mi Portafolio</span>
-                                <h1>{`Hola, mi nombre es Iván Vázquez :`}<span className="wrap"> {text}</span></h1>
-                                <p>Soy desarrollador, tengo experiencia en desarrollo web y diseño de interfaz. Me considero una persona comprometida con aprender y mejorar.</p>
+                                <h1>{`Holes Iván Vázquez :`}<span className="wrap"> {text}</span></h1>
+                                <p>"¡Hola! Soy un apasionado diseñador con habilidades sólidas en desarrollo web, diseño de interfaz y diseño gráfico. Mi enfoque va más allá: me considero una mente inquieta y comprometida con la mejora constante. Estoy aquí para crear experiencias visuales únicas y efectivas, siempre listo para aprender y evolucionar en el emocionante mundo del diseño."</p>
                                 <button onClick={() =>console.log('connect')}>Contáctame <ArrowRightCircle size={25}/></button>
                             </div>}
                         </TrackVisibility>
