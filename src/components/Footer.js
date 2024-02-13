@@ -15,12 +15,14 @@ export const Footer = () => {
               
                 <Col sm={6}>
                     <a href="/">
+                    <br></br>
                         <img src={logo} alt="Logo" />
                     </a>
                 </Col>
                 <Col sm={6} className="text-center text-sm-end">
                     <Col>
                     <br></br>
+                    
                     <a href={cv} className="link" target="_blank" rel="noopener noreferrer"> Descarga mi CV(Hoja de vida)</a>
                     </Col>
                     <br></br>

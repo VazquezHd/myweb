@@ -64,7 +64,7 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Bienvenidos a mi Portafolio</span>
-                  <h1>{`Holes Iván Vázquez :`}<span className="wrap"> {text}</span></h1>
+                  <h1>{`Hola, soy Iván Vázquez: `}<span className="wrap"> {text}</span></h1>
                   <p>"¡Hola! Soy un apasionado diseñador con habilidades sólidas en desarrollo web, diseño de interfaz y diseño gráfico. Mi enfoque va más allá: me considero una mente inquieta y comprometida con la mejora constante. Estoy aquí para crear experiencias visuales únicas y efectivas, siempre listo para aprender y evolucionar en el emocionante mundo del diseño."</p>
                   <button onClick={() => descargarArchivo(contactoArchivo)}>Descarga mi CV <ArrowRightCircle size={25} /></button>
                 </div>
