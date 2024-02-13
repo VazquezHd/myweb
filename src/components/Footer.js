@@ -20,7 +20,7 @@ export const Footer = () => {
                 </Col>
                 <Col sm={6} className="text-center text-sm-end">
                     <Col>
-                    <a href={cv} className="link"> Descarga mi CV(Hoja de vida)</a>
+                    <a href={cv} className="link" target="_blank" rel="noopener noreferrer"> Descarga mi CV(Hoja de vida)</a>
                     </Col>
                     <br></br>
                     <div className="social-icon">

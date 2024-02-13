@@ -117,12 +117,12 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">Diseño gráfico</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Maquetación</Nav.Link>
+                        <Nav.Link eventKey="third">Maquetación UX/UI</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                       <Tab.Pane eventKey="first">
-                        <p>Desarrollo Web</p>
+                        <p>Estos son algunos proyectos que he realizado en el área del desarrollo web.</p>
                         <Row>
                           {webDevelopmentProjects.map((project, index) => (
                             <ProjectCard
@@ -134,7 +134,7 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>Diseño gráfico</p>
+                        <p>Estos son algunos proyectos que he realizado en el área del diseño gráfico.</p>
                         <Row>
                           {graphicDesignProjects.map((project, index) => (
                             <ProjectCard
@@ -146,7 +146,7 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>Maquetación</p>
+                        <p>Estos son algunos proyectos que he realizado en el área de la maquetación UX/UI.</p>
                         <Row>
                           {layoutProjects.map((project, index) => (
                             <ProjectCard
