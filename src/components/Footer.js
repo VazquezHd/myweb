@@ -28,7 +28,7 @@ export const Footer = () => {
                     <br></br>
                     <div className="social-icon">
                         <a href="https://www.linkedin.com/in/ivan-v%C3%A1zquez-1347b9241/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="" /></a>
-                        <a href="https://www.facebook.com/ivan.vazquez.100" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
+                        <a href="https://github.com/VazquezHd" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
                         <a href="https://www.instagram.com/vazquez.hd/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="" /></a>
                     </div>
                     <p>©2023 Copyright Vazquez.Hd</p>
