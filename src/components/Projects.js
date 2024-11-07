@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Container, Row, Col, Tab, Nav, Modal, Button } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/web1.png";
-import projImg2 from "../assets/img/web2.png";
+import projImg2 from "../assets/img/pokeapi.png";
 import projImg3 from "../assets/img/web3.png";
+import projImg4 from "../assets/img/web2.png";
 import projDis1 from "../assets/img/dis1.png";
 import projDis2 from "../assets/img/dis2.jpg";
 import projDis3 from "../assets/img/dis3.jpg";
@@ -38,8 +39,8 @@ export const Projects = () => {
       imgUrl: projImg1,
     },
     {
-      title: "Atom",
-      description: "HTML, CSS, Bootstrap",
+      title: "Pikeapi",
+      description: "React, Axios",
       imgUrl: projImg2,
     },
     {
@@ -47,6 +48,8 @@ export const Projects = () => {
       description: "HTML, CSS, Bootstrap, Javascript, React",
       imgUrl: projImg3,
     },
+    
+    
   ];
 
   const graphicDesignProjects = [
