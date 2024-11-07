@@ -36,7 +36,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
         link.click();
         document.body.removeChild(link);
         alert("Descargando CV...");
-      };
+    };
 
     return (
         <Col lg={12}>
@@ -54,7 +54,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
                                 <button type="button" onClick={handleCopyToClipboard}>Copiar Email</button>
                                 <div className="button-separator"></div>
                                 <button type="button" onClick={handleDownloadCV}>
-                  Descargar CV
+                Descargar CV
                 </button>
                             </div>
                     </Col>

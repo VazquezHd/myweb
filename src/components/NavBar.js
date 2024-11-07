@@ -106,7 +106,6 @@ export const NavBar = () => {
           </p>
           <p className="contact-info">
             Teléfono: +52 7727497831
-               
             <Button
               variant="secondary"
               className="copy-button"

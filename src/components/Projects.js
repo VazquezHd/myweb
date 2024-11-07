@@ -10,9 +10,12 @@ import projDis3 from "../assets/img/dis3.jpg";
 import projDis4 from "../assets/img/dis4.jpg";
 import projDis5 from "../assets/img/dis5.jpg";
 import projDis6 from "../assets/img/dis6.jpg";
-import projMaq1 from "../assets/img/maq1.png";
-import projMaq2 from "../assets/img/maq2.png";
-import projMaq3 from "../assets/img/maq3.png";
+import projMaq1 from "../assets/img/laundy.jpg";
+import projMaq2 from "../assets/img/perfil.png";
+import projMaq3 from "../assets/img/alumno.png";
+import projMaq4 from "../assets/img/chuchi.png";
+import projMaq5 from "../assets/img/macetas.png";
+import projMaq6 from "../assets/img/salud.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -77,24 +80,40 @@ export const Projects = () => {
       description: "Fotografía, Lightroom , Photoshop",
       imgUrl: projDis3,
     },
- 
+
   ];
 
   const layoutProjects = [
     {
-      title: "UAEH",
+      title: "Chuchito",
       description: "Figma",
-      imgUrl: projMaq1,
+      imgUrl: projMaq4,
     },
     {
-      title: "Elisa",
+      title: "Blooms",
       description: "Figma",
-      imgUrl: projMaq2,
+      imgUrl: projMaq5,
+    },
+    {
+      title: "M8 club Salud",
+      description: "Figma",
+      imgUrl: projMaq6,
     },
     {
       title: "UAEH",
       description: "Figma",
       imgUrl: projMaq3,
+    },
+
+    {
+      title: "GO MORE",
+      description: "Figma",
+      imgUrl: projMaq1,
+    },
+    {
+      title: "Pre Academy",
+      description: "Figma",
+      imgUrl: projMaq2,
     },
   ];
 
@@ -114,10 +133,10 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Desarrollo Web</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Diseño gráfico</Nav.Link>
+                        <Nav.Link eventKey="second">Maquetación UX/UI</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Maquetación UX/UI</Nav.Link>
+                        <Nav.Link eventKey="third">Diseño gráfico</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -134,9 +153,9 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>Estos son algunos proyectos que he realizado en el área del diseño gráfico.</p>
+                      <p>Estos son algunos proyectos que he realizado en el área de la maquetación UX/UI</p>
                         <Row>
-                          {graphicDesignProjects.map((project, index) => (
+                          {layoutProjects.map((project, index) => (
                             <ProjectCard
                               key={index}
                               {...project}
@@ -144,11 +163,12 @@ export const Projects = () => {
                             />
                           ))}
                         </Row>
+                        
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>Estos son algunos proyectos que he realizado en el área de la maquetación UX/UI.</p>
+                      <p>Estos son algunos proyectos que he realizado en el área del diseño gráfico.</p>
                         <Row>
-                          {layoutProjects.map((project, index) => (
+                          {graphicDesignProjects.map((project, index) => (
                             <ProjectCard
                               key={index}
                               {...project}
